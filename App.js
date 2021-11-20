@@ -204,7 +204,7 @@ export default class Persona extends React.Component {
     render() {
         return (
 
-            <View style = {MisEstilos.MainContainer}>     
+        <View style = {MisEstilos.MainContainer}>     
 
                 <Text style = {{
                     fontSize: 20,
@@ -237,11 +237,148 @@ export default class Persona extends React.Component {
                     underlineColorAndroid='trasparent'
                     style={MisEstilos.TextInputEstyleClass}
                     value={this.state.TextInput_nif}> 
+                 </TextInput>                
+
+                 <TextInput placeholder='Ingrese el Nombre'
+                 onChangeText=
+                    {TextInputValue=>this.setState({
+
+                    TextInput_nombre:TextInputValue
+
+                    })}
+                    underlineColorAndroid='trasparent'
+                    style={MisEstilos.TextInputEstyleClass}
+                    value={this.state.TextInput_nombre}> 
                  </TextInput>
+
+                 <TextInput placeholder='Ingrese Primer Apellido'
+                 onChangeText=
+                    {TextInputValue=>this.setState({
+
+                    TextInput_apellido1:TextInputValue
+
+                    })}
+                    underlineColorAndroid='trasparent'
+                    style={MisEstilos.TextInputEstyleClass}
+                    value={this.state.TextInput_apellido1}> 
+                 </TextInput>
+
+                 <TextInput placeholder='Ingrese Segundo Apellido'
+                 onChangeText=
+                    {TextInputValue=>this.setState({
+
+                    TextInput_apellido2:TextInputValue
+
+                    })}
+                    underlineColorAndroid='trasparent'
+                    style={MisEstilos.TextInputEstyleClass}
+                    value={this.state.TextInput_apellido2}> 
+                 </TextInput>
+
+                 <TextInput placeholder='Ingrese Ciudad'
+                 onChangeText=
+                    {TextInputValue=>this.setState({
+
+                    TextInput_ciudad:TextInputValue
+
+                    })}
+                    underlineColorAndroid='trasparent'
+                    style={MisEstilos.TextInputEstyleClass}
+                    value={this.state.TextInput_ciudad}> 
+                 </TextInput>
+
+                 <TextInput placeholder='Ingrese Clave'
+                 onChangeText=
+                    {TextInputValue=>this.setState({
+
+                    TextInput_clave:TextInputValue
+
+                    })}
+                    underlineColorAndroid='trasparent'
+                    style={MisEstilos.TextInputEstyleClass}
+                    value={this.state.TextInput_clave}> 
+                 </TextInput>
+
+                 <TextInput placeholder='Ingrese Direccion'
+                 onChangeText=
+                    {TextInputValue=>this.setState({
+
+                    TextInput_direccion:TextInputValue
+
+                    })}
+                    underlineColorAndroid='trasparent'
+                    style={MisEstilos.TextInputEstyleClass}
+                    value={this.state.TextInput_direccion}> 
+                 </TextInput>
+
+                 <TextInput placeholder='Ingrese Telefono'
+                 onChangeText=
+                    {TextInputValue=>this.setState({
+
+                    TextInput_telefono:TextInputValue
+
+                    })}
+                    underlineColorAndroid='trasparent'
+                    style={MisEstilos.TextInputEstyleClass}
+                    value={this.state.TextInput_telefono    }> 
+                 </TextInput>
+
+                 <TextInput placeholder='Ingrese Fecha de Nacimiento'
+                 onChangeText=
+                    {TextInputValue=>this.setState({
+
+                    TextInput_fecha_nacimiento:TextInputValue
+
+                    })}
+                    underlineColorAndroid='trasparent'
+                    style={MisEstilos.TextInputEstyleClass}
+                    value={this.state.TextInput_fecha_nacimiento}> 
+                 </TextInput>
+
+                 <TextInput placeholder='Ingrese Sexo'
+                 onChangeText=
+                    {TextInputValue=>this.setState({
+
+                    TextInput_sexo:TextInputValue
+
+                    })}
+                    underlineColorAndroid='trasparent'
+                    style={MisEstilos.TextInputEstyleClass}
+                    value={this.state.TextInput_sexo}> 
+                 </TextInput>
+
+                 <TextInput placeholder='Ingrese Tipo'
+                 onChangeText=
+                    {TextInputValue=>this.setState({
+
+                    TextInput_tipo:TextInputValue
+
+                    })}
+                    underlineColorAndroid='trasparent'
+                    style={MisEstilos.TextInputEstyleClass}
+                    value={this.state.TextInput_tipo}> 
+                 </TextInput>
+
+               
+
+                 
+
+
+
+
+
+
+
+
+                 <TouchableOpacity 
+                    activeOpacity={0.4}
+                    style={MisEstilos.TouchableOpacityStyle}
+                    onPress={this.InsertarPersona}>REGISTRAR
+                 </TouchableOpacity>
 
            
            
-            </View>
+        </View>
 
         );
     }
@@ -279,7 +416,8 @@ const MisEstilos = StyleSheet.create({
         borderRadius: 5,
         marginBottom: 7,
         width: '90%',
-        backgroundColor: '#08BCD4'
+        backgroundColor: '#08BCD4',
+
     },
     TextStyle: {
 
